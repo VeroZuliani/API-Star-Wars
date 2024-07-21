@@ -1,0 +1,92 @@
+
+:root{
+    --bg-color: black;
+    --bg-tit:rgba(255, 255, 255, 0.699);
+    --bg-card:#272b30;
+    --color-card:rgba(255, 255, 255, 0.5);
+    --color-btn-borde:#ffe300;
+}
+
+header{
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    width: 40rem;
+    height: 14rem;
+}
+
+.navbar{
+    margin: 2rem 0 2rem 0;
+    padding: 0;
+}
+
+.container-fluid{
+    background-color: var(--bg-color);
+    padding: 0px;
+}
+
+.form-control{
+    width: 30rem;
+    border: 1px solid var(--bg-card);
+    background-color: var(--bg-color);
+    color: var(--bg-tit); 
+    font-weight: 500;
+}
+
+.form-control:focus,.form-control:hover{ 
+    background-color: var(--bg-color);
+    color: var(--bg-tit);
+    box-shadow: none;
+    border: 1px solid var(--bg-card);
+}
+
+.contenedor{
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    margin: 2rem;
+    border: 1px solid var(--bg-card);
+    background-color: var(--bg-color);
+    align-items: center;
+    color: var(--color-card);
+}
+
+.personaje,.nave,.pelicula{
+    color: var(--bg-tit);
+    padding-top: 3rem;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.btnContenedor{
+    width: 25rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.btn{
+    font-weight: 500;
+    background-color: var(--color-btn-borde);
+    color: var(--bg-card);
+    border: none;
+    transition: background-color 1s, color 1s;
+}
+
+.btn:hover{
+    background-color: var(--bg-card);
+    color: var(--color-btn-borde);
+} 
